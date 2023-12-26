@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Item in the Table</title>
+    </head>
+    <body>
+
+        {% include 'navbar.html' %}
+
+        <h1>Update item</h1>
+        
+        <form action="/update-table-item" method="post">
+            <input type="text" name="tableName" value="StudentDetails"><br>
+            <input type="text" name="regNo" placeholder="Partition Key"><br>
+            <input type="text" name="name" placeholder="Sort Key"><br>
+            <input type="number" name="age" placeholder="Age"><br>
+            <input type="text" name="address" placeholder="Address"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
+

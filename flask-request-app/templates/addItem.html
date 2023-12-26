@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Item</title>
+    </head>
+    <body>
+
+        {% include 'navbar.html' %}
+
+        <h1>Add item</h1>
+        
+        <form action="/add-table-item" method="post">
+            <input type="text" name="tableName" value="StudentDetails"><br>
+            <input type="text" name="regNo" placeholder="regNo"><br>
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="number" name="age" placeholder="Age"><br>
+            <input type="text" name="address" placeholder="Address"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
+

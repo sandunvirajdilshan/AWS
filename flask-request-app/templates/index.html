@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create DynamoDB Table</title>
+    </head>
+    <body>
+
+        {% include 'navbar.html' %}
+
+        <h1>Create DynamoDB Table</h1>
+        
+        <form action="/create-table" method="POST">
+            <label for="tableName">Table Name:</label><br>
+            <input type="text" name="tableName" value="StudentDetails"/><br>
+            <label for="partitionKey">Partition Key:</label><br>
+            <input type="text" name="partitionKey" value="regNo"/><br>
+            <label for="sortKey">Sort key:</label><br>
+            <input type="text" name="sortKey" value="name"/><br>
+            <input type="submit" value="Create Table"/>
+        </form>
+
+    </body>
+</html>
+

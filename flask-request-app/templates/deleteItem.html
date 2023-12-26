@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Item</title>
+    </head>
+    <body>
+
+        {% include 'navbar.html' %}
+
+        <h1>Delete item</h1>
+        
+        <form action="/delete-table-item">
+            <input type="text" name="tableName" value="StudentDetails"><br>
+            <input type="text" name="regNo" placeholder="Partition Key"><br>
+            <input type="text" name="name" placeholder="Sort Key"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
+
