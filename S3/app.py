@@ -1,6 +1,5 @@
 import boto3
 
-
 # Create a Bucket
 s3_resource = boto3.resource('s3')
 s3_resource.create_bucket(
